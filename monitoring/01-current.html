@@ -39,29 +39,41 @@
 						<li class="nav-item">
 							<a class="nav-link active" href="01-current.html">
 							<span data-feather="home"></span>
-							<i class="far fa-chart-bar"></i> 1모니터링 현황 <span class="sr-only">(current)</span>
+							<i class="far fa-chart-bar"></i> 현황 <span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="02-site_info.html">
 							<span data-feather="file"></span>
-							<i class="fas fa-info-circle"></i> 사이트 정보관리
+							<i class="fas fa-info-circle"></i> 기관 정보관리
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="03-contents.html">
+							<a class="nav-link" href="03-vimeo-info.html">
 							<span data-feather="shopping-cart"></span>
-							<i class="fas fa-angle-double-right"></i> 콘텐츠 전송현황
+							<i class="fas fa-angle-double-right"></i> 비메오 정보관리
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="04-vimeo_error.html">
+							<a class="nav-link" href="04-contents.html">
+							<span data-feather="users"></span>
+							<i class="fas fa-exclamation-triangle"></i> 콘텐츠 전송현황
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="05-traffic.html">
+							<span data-feather="users"></span>
+							<i class="fas fa-exclamation-triangle"></i> 콘텐츠 전송 트래픽
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="06-vimeo_error.html">
 							<span data-feather="users"></span>
 							<i class="fas fa-exclamation-triangle"></i> 비메오 전송오류
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="05-system_log.html">
+							<a class="nav-link" href="07-system_log.html">
 							<span data-feather="bar-chart-2"></span>
 							<i class="fas fa-list-ul"></i> 시스템 로그
 							</a>
@@ -72,23 +84,22 @@
 
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-						<h4 class="text-primary">모니터링 현황</h4>
+						<h4 class="text-primary">기관 현황</h4>
 						<div class="btn-toolbar mb-2 mb-md-0">
 						<div class="btn-group mr-2">
-							<a href="" type="button" class="btn btn-sm btn-outline-secondary">Share</a>
-							<a href="" type="button" class="btn btn-sm btn-outline-secondary">Export</a>
+							<a href="" type="button" class="btn btn-sm btn-outline-secondary">기관 생성</a>
 						</div>
 						</div>
 					</div>
 					<table class="table mb-4">
 						<thead>
 						<tr class="bg-light">
-							<th scope="col" width="15%">사이트명</th>
+							<th scope="col" width="15%">기관명</th>
 							<th scope="col" width="15%">기관코드</th>
 							<th scope="col" width="15%">전체용량</th>
 							<th scope="col" width="15%">사용용량</th>
 							<th scope="col" width="15%">총 콘텐츠 수</th>
-							<th scope="col"></th>
+							<th></th>
 						</tr>
 						</thead>
 						<tbody>
@@ -99,9 +110,9 @@
 							<td>2 GB</td>
 							<td>100 건 </td>
 							<td>
-							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-							</div>
+								<div class="progress">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+								</div>
 							</td>
 						</tr>
 						<tr>
@@ -130,8 +141,45 @@
 						</tr>
 						</tbody>
 					</table>
-					<h5 class="mb-3">콘텐츠 사용량</h5>
-					<div class="w-100" style="height:250px;border:1px solid #ccc"></div>
+					<h5 class="mb-3">전송 실패 현황</h5>
+					<table class="table mb-4">
+						<thead>
+						<tr class="bg-light">
+							<th scope="col" width="15%">기관명</th>
+							<th scope="col" width="15%">녹화실</th>
+							<th scope="col" width="15%">제목</th>
+							<th scope="col" width="15%">생성일</th>
+							<th scope="col" width="15%">진행현황</th>
+							<th>정보</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						</tbody>
+					</table>
 				</main>
 			</div><!--// row -->
 		</div><!--// container-fluid -->
