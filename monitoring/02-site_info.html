@@ -83,7 +83,7 @@
 
 			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h4 class="text-primary">사이트 정보관리1</h4>
+					<h4 class="text-primary">기관 정보관리</h4>
 					<div class="btn-toolbar mb-2 mb-md-0">
 					<div class="btn-group mr-2">
 						<a href="" type="button" class="btn btn-sm btn-outline-secondary">Share</a>
@@ -97,116 +97,131 @@
 				<div class="upload-box row row-cols-1">
 				<nav>
 					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a class="nav-link active" id="nav-movie-tab" data-toggle="tab" href="#nav-01" role="tab" aria-controls="nav-01" aria-selected="true">일반정보</a>
-						<a class="nav-link" id="nav-doc-tab" data-toggle="tab" href="#nav-02" role="tab" aria-controls="nav-02" aria-selected="false">클라우드정보</a>
-						<a class="nav-link" id="nav-social-tab" data-toggle="tab" href="#nav-03" role="tab" aria-controls="nav-03" aria-selected="false">전체할당공간</a>
+						<a class="nav-link active" id="nav-01-tab" data-toggle="tab" href="#nav-01" role="tab" aria-controls="nav-01" aria-selected="true">일반정보</a>
+						<a class="nav-link" id="nav-02-tab" data-toggle="tab" href="#nav-02" role="tab" aria-controls="nav-02" aria-selected="false">비메오 폴더정보</a>
 					</div>
 				</nav>
 				<!-- tab-content -->
 				<div class="tab-content" id="nav-tabContent">
-					<!-- 1 일반정보-->
 					<div class="tab-pane fade show active" id="nav-01" role="tabpanel" aria-labelledby="nav-01-tab">
-						<div class="text-center m-5">
-							<form class="form-inline">
-								<div class="form-group">사이트명</div>
-								<div class="form-group mx-sm-3">
-									<input type="text" class="form-control" id="inputPassword2" placeholder="포스텍"/>
-								</div>
-								<div class="form-group ml-5">기관코드 :</div>
-								<div class="form-group mx-sm-3">asdf1234</div>
-								<div class="text-right ml-5">
-									<a class="btn btn-primary" href="#" role="button">확 인</a>
-									<a class="btn btn-secondary" href="#" role="button">취 소</a>
-								</div>
-							</form>
-						</div>
+						<!-- 1 일반정보-->
+						<table class="table table-bordered mt-3">
+							<tr>
+								<th style="width:200px">기관명</th>
+								<td>
+									<input type="text" class="form-control w-50" id="" placeholder="포스텍">
+								</td>
+							</tr>
+							<tr>
+								<th>기관코드</th>
+								<td>asdf1234</td>
+							</tr>
+							<tr>
+								<th>활성</th>
+								<td>
+									<select class="form-control w-50" id="">
+										<option selected>활성</option>
+										<option value="1">비활성</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+						<p class="text-right">
+							<a class="btn btn-primary"> <span>확인</span></a>
+							<a class="btn btn-secondary ml-1"> <span>취소</span></a>
+						</p>
 					</div>
 					<!--// 1 일반정보-->
-					<!-- 2 클라우드정보 -->
+					<!-- 2 비메오 폴더정보 -->
 					<div class="tab-pane fade" id="nav-02" role="tabpanel" aria-labelledby="nav-02-tab">
-						<div class="text-center mt-3">
-							<table class="table table-sm">
-								<thead class="thead-dark">
-									<tr>
-									<th scope="col">비메오 ID</th>
-									<th scope="col">비메오 USER ID</th>
-									<th scope="col">보안키</th>
-									<th scope="col">클라이언트 ID</th>
-									<th scope="col">로트폴더 ID</th>
-									<th scope="col">용량</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">admin</th>
-										<td>admin@gmail.com</td>
-										<td>asdf1234</td>
-										<td>clientid5678</td>
-										<td>1234</td>
-										<td>5000 GB <a class="btn btn-sm btn-outline-primary" href="#" role="button">수정</a>
-											<a class="btn btn-sm btn-outline-secondary" href="#" role="button">삭제</a>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">admin</th>
-										<td>admin@gmail.com</td>
-										<td>asdf1234</td>
-										<td>clientid5678</td>
-										<td>1234</td>
-										<td>5000 GB <a class="btn btn-sm btn-outline-primary" href="#" role="button">수정</a>
-											<a class="btn btn-sm btn-outline-secondary" href="#" role="button">삭제</a>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">admin</th>
-										<td>admin@gmail.com</td>
-										<td>asdf1234</td>
-										<td>clientid5678</td>
-										<td>1234</td>
-										<td>5000 GB <a class="btn btn-sm btn-outline-primary" href="#" role="button">수정</a>
-											<a class="btn btn-sm btn-outline-secondary" href="#" role="button">삭제</a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<a href="" type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#cloud_add">+ 클라우드 추가</a>
-						</div>
+						<table class="table table-bordered mt-3">
+							<tr>
+								<th>비메오 계정</th>
+								<th>저장폴더 ID</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>cloud1@vimeo.com</td>
+								<td>asdf1234</td>
+								<td>
+									<a class="btn btn-sm btn-outline-primary ml-1"> <span>선택해제</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>cloud1@vimeo.com</td>
+								<td>asdf1234</td>
+								<td>
+									<a class="btn btn-sm btn-outline-primary ml-1"> <span>선택해제</span></a>
+								</td>
+							</tr>
+						</table>
+						<a href="" type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#vimeo_folder">+ 비메오 폴더선택</a>
+						<p class="text-right mt-3">
+							<a class="btn btn-primary"> <span>확인</span></a>
+							<a class="btn btn-secondary ml-1"> <span>취소</span></a>
+						</p>
 						<!-- Modal -->
-						<div class="modal fade" id="cloud_add" tabindex="-1" aria-labelledby="cloud_addLabel" aria-hidden="true">
-							<div class="modal-dialog">
+						<div class="modal fade" id="vimeo_folder" tabindex="-1" aria-labelledby="vimeo_folder" aria-hidden="true">
+							<div class="modal-dialog modal-xl">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title" id="cloud_addLabel">비메오 정보 등록 / 수정</h5>
+										<h5 class="modal-title" id="cloud_addLabel">비메오 폴더선택</h5>
 										<a href="" type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</a>
 									</div>
 									<div class="modal-body">
-										<table class="table table-sm table-borderless">
-											<tr>
-												<th style="width: 150px; text-align: left">비메오 ID</th>
-												<td><input type="text" class="form-control" id="" /></td>
-											</tr>
-											<tr>
-												<th style="width: 150px; text-align: left">비메오 USER ID</th>
-												<td><input type="text" class="form-control" id=""/></td>
-											</tr>
-											<tr>
-												<th style="width: 150px; text-align: left">보안키</th>
-												<td><input type="text" class="form-control" id=""/></td>
-											</tr>
-											<tr>
-												<th style="width: 150px; text-align: left">클라이언트 ID</th>
-												<td><input type="text" class="form-control" id=""/></td>
-											</tr>
-											<tr>
-												<th style="width: 150px; text-align: left">로트폴더 ID</th>
-												<td><input type="text" class="form-control" id=""/></td>
-											</tr>
-											<tr>
-												<th style="width: 150px; text-align: left">용량</th>
-												<td><input type="text" class="form-control" id=""/></td>
-											</tr>
+										<div class="form-inline mb-2">
+											<select class="form-control" id="" style="width:200px">
+												<option selected>cloud1@vimeo.com</option>
+												<option value="1">cloud2@vimeo.com</option>
+												<option value="2">cloud3@vimeo.com</option>
+											</select>
+											<a class="btn btn-sm btn-outline-primary ml-1" href="#" role="button">검색</a>
+										</div>
+										<table class="table table-sm">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">USER ID</th>
+													<th scope="col">보안키</th>
+													<th scope="col">클라이언트 ID</th>
+													<th scope="col">저장폴더명</th>
+													<th scope="col">저장폴더ID</th>
+													<th scope="col">용량</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>admin@gmail.com</td>
+													<td>asdf1234</td>
+													<td>clientid5678</td>
+													<td>포스텍</td>
+													<td>asdasad</td>
+													<td>5000 GB 
+														<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+													</td>
+												</tr>
+												<tr>
+													<td>admin@gmail.com</td>
+													<td>asdf1234</td>
+													<td>clientid5678</td>
+													<td>포스텍</td>
+													<td>asdasad</td>
+													<td>5000 GB 
+														<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+													</td>
+												</tr>
+												<tr>
+													<td>admin@gmail.com</td>
+													<td>asdf1234</td>
+													<td>clientid5678</td>
+													<td>포스텍</td>
+													<td>asdasad</td>
+													<td>5000 GB 
+														<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+													</td>
+												</tr>
+											</tbody>
 										</table>
 									</div>
 									<div class="modal-footer">
@@ -216,26 +231,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="text-right mt-3">
-							<a class="btn btn-primary" href="#" role="button">확 인</a>
-							<a class="btn btn-secondary" href="#" role="button">취 소</a>
-						</div>
+						<!--// modal -->
 					</div>
-					<!--// 2 클라우드정보 -->
-					<!-- 3 전체할당공간 -->
-					<div class="tab-pane fade" id="nav-03" role="tabpanel" aria-labelledby="nav-03-tab">
-						<div class="text-center m-5">
-							<form class="form-inline">
-							<div class="form-group mb-2">전체용량</div>
-							<div class="form-group mx-sm-3 mb-2">
-								<input type="text" class="form-control" id="" placeholder="5,000 GB"/>
-								<a class="btn btn-sm btn-primary ml-2" href="#" role="button">확 인</a>
-								<a class="btn btn-sm btn-secondary ml-2" href="#" role="button" >취 소</a>
-							</div>
-							</form>
-						</div>
-					</div>
-					<!--// 3 전체할당공간 -->
+					<!--// 2 비메오 폴더정보 -->
 				</div><!--// tab-content -->
 			</div>
 			<!--// tab -->

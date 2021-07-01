@@ -94,75 +94,126 @@
 					<!-- 기간검색 -->
 					<div class="form-inline mb-4">
 						<div class="form-group">
-								<select class="form-control form-control mr-sm-2 my-1" id="site">
-									<option selected>사이트 전체</option>
-									<option value="1">1주일</option>
-									<option value="2">3개월</option>
-									<option value="3">6개월</option>
-								</select>	
-								<select class="form-control form-control mr-sm-2 my-1" id="date">
-										<option selected>기간 전체</option>
-										<option value="1">1주일</option>
-										<option value="2">3개월</option>
-										<option value="3">6개월</option>
-								</select>
-								<script>
-										$( function() {
-											$( "#input-start" ).datepicker();
-											$( "#input-end" ).datepicker();
-										} );
-								</script>
-								<div>
-										<input type="text" class="form-control" id="input-start" placeholder="시작일 선택" aria-describedby="day-start" style="width:120px">
-								</div>
-								<div>
-										<span class="px-1">~</span>
-										<input type="text" class="form-control" id="input-end" placeholder="종료일 선택" aria-describedby="day-end" style="width:120px">
-								</div>
-								<input class="form-control form-search ml-1" style="width:250px" type="search" placeholder="결과 내 검색(저작자, 등록자ID, 제목)" aria-label="Search">
-								<a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
-								<a class="btn btn-sm btn-outline-primary ml-1"> <span>초기화</span></a>
+							<select class="form-control form-control mr-sm-2 my-1" id="site">
+								<option selected>사이트 전체</option>
+								<option value="1">1주일</option>
+								<option value="2">3개월</option>
+								<option value="3">6개월</option>
+							</select>	
+							<select class="form-control form-control mr-sm-2 my-1" id="date">
+								<option selected>기간 전체</option>
+								<option value="1">1주일</option>
+								<option value="2">3개월</option>
+								<option value="3">6개월</option>
+							</select>
+							<div>
+								<input type="text" class="form-control" id="input-start" placeholder="시작일 선택" aria-describedby="day-start" style="width:120px">
+							</div>
+							<div>
+								<span class="px-1">~</span>
+								<input type="text" class="form-control" id="input-end" placeholder="종료일 선택" aria-describedby="day-end" style="width:120px">
+							</div>
+							<input class="form-control form-search ml-1" style="width:250px" type="search" placeholder="결과 내 검색(저작자, 등록자ID, 제목)" aria-label="Search">
+							<a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
+							<a class="btn btn-sm btn-outline-primary ml-1"> <span>초기화</span></a>
 						</div>
 					</div>
 					<!--// 기간검색 -->
 					<table class="table">
 						<thead>
-							<tr class="bg-light">
-								<th scope="col" width="12%">사이트명</th>
-								<th scope="col" width="12%">녹화실</th>
-								<th scope="col" width="12%">제목</th>
-								<th scope="col" width="12%">생성일</th>
-								<th scope="col">진행현황</th>
-								<th scope="col" width="12%">정보</th>
+							<tr>
+								<th scope="col">비메오 USER ID</th>
+								<th scope="col">보안키</th>
+								<th scope="col">클라이언트 ID</th>
+								<th scope="col">폴더ID</th>
+								<th scope="col">폴더명</th>
+								<th scope="col">용량</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th scope="row"><a href="">포스텍</a></th>
-								<td>본관 강의실</td>
-								<td>수학 특강</td>
-								<td>2021.06.01</td>
-								<td> </td>
-								<td> </td>
+								<td>admin@gmail.com</td>
+								<td>asdf1234</td>
+								<td>clientid5678</td>
+								<td>포스텍</td>
+								<td>asdasad</td>
+								<td>5000 GB 
+									<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row"><a href="">포스텍</a></th>
-								<td>본관 강의실</td>
-								<td>수학 특강</td>
-								<td>2021.06.01</td>
-								<td> </td>
-								<td> </td>
+								<td>admin@gmail.com</td>
+								<td>asdf1234</td>
+								<td>clientid5678</td>
+								<td>포스텍</td>
+								<td>asdasad</td>
+								<td>5000 GB 
+									<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row"><a href="">서울인문대</a></th>
-								<td>본관 강의실</td>
-								<td>수학 특강</td>
-								<td>2021.06.01</td>
-								<td> </td>
-								<td> </td>
+								<td>admin@gmail.com</td>
+								<td>asdf1234</td>
+								<td>clientid5678</td>
+								<td>포스텍</td>
+								<td>asdasad</td>
+								<td>5000 GB 
+									<a class="btn btn-sm btn-outline-primary" href="#" role="button">선택</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>
+					<a href="" type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#vimeo_add">+ 추 가</a>
+					<p class="text-right mt-3">
+						<a class="btn btn-primary"> <span>확인</span></a>
+						<a class="btn btn-secondary ml-1"> <span>취소</span></a>
+					</p>
+					<!-- Modal -->
+					<div class="modal fade" id="vimeo_add" tabindex="-1" aria-labelledby="vimeo_add" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="cloud_addLabel">비메오 폴더선택</h5>
+									<a href="" type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</a>
+								</div>
+								<div class="modal-body">
+									<table class="table table-sm table-borderless">
+										<tr>
+											<th style="width: 150px; text-align: left">폴더명</th>
+											<td><input type="text" class="form-control" id="" /></td>
+										</tr>
+										<tr>
+											<th style="width: 150px; text-align: left">비메오 USER ID</th>
+											<td><input type="text" class="form-control" id=""/></td>
+										</tr>
+										<tr>
+											<th style="width: 150px; text-align: left">보안키</th>
+											<td><input type="text" class="form-control" id=""/></td>
+										</tr>
+										<tr>
+											<th style="width: 150px; text-align: left">클라이언트 ID</th>
+											<td><input type="text" class="form-control" id=""/></td>
+										</tr>
+										<tr>
+											<th style="width: 150px; text-align: left">폴더 ID</th>
+											<td><input type="text" class="form-control" id=""/></td>
+										</tr>
+										<tr>
+											<th style="width: 150px; text-align: left">용량</th>
+											<td><input type="text" class="form-control" id=""/></td>
+										</tr>
+									</table>
+								</div>
+								<div class="modal-footer">
+									<a class="btn btn-primary" href="#" role="button" data-dismiss="modal">확인</a>
+									<a class="btn btn-secondary" href="#" role="button">취소</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// modal -->
 				</main>
 			</div><!--// row -->
 		</div><!--// container-fluid -->

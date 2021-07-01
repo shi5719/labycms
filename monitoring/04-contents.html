@@ -94,41 +94,40 @@
 					<!-- 기간검색 -->
 					<div class="form-inline mb-4">
 						<div class="form-group">
-								<select class="form-control form-control mr-sm-2 my-1" id="site">
-									<option selected>사이트 전체</option>
+							<select class="form-control form-control mr-sm-2 my-1" id="site">
+								<option selected>기관 전체</option>
+								<option value="1">1주일</option>
+								<option value="2">3개월</option>
+								<option value="3">6개월</option>
+							</select>	
+							<select class="form-control form-control mr-sm-2 my-1" id="date">
+									<option selected>기간 전체</option>
 									<option value="1">1주일</option>
 									<option value="2">3개월</option>
 									<option value="3">6개월</option>
-								</select>	
-								<select class="form-control form-control mr-sm-2 my-1" id="date">
-										<option selected>기간 전체</option>
-										<option value="1">1주일</option>
-										<option value="2">3개월</option>
-										<option value="3">6개월</option>
-								</select>
-								<script>
-										$( function() {
-											$( "#input-start" ).datepicker();
-											$( "#input-end" ).datepicker();
-										} );
-								</script>
-								<div>
-										<input type="text" class="form-control" id="input-start" placeholder="시작일 선택" aria-describedby="day-start" style="width:120px">
-								</div>
-								<div>
-										<span class="px-1">~</span>
-										<input type="text" class="form-control" id="input-end" placeholder="종료일 선택" aria-describedby="day-end" style="width:120px">
-								</div>
-								<input class="form-control form-search ml-1" style="width:250px" type="search" placeholder="결과 내 검색(저작자, 등록자ID, 제목)" aria-label="Search">
-								<a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
-								<a class="btn btn-sm btn-outline-primary ml-1"> <span>초기화</span></a>
+							</select>
+							<div>
+								<input type="text" class="form-control" id="input-start" placeholder="시작일 선택" aria-describedby="day-start" style="width:120px">
+							</div>
+							<div>
+								<span class="px-1">~</span>
+								<input type="text" class="form-control" id="input-end" placeholder="종료일 선택" aria-describedby="day-end" style="width:120px">
+							</div>
+							<input class="form-control form-search ml-1" style="width:250px" type="search" placeholder="결과 내 검색(저작자, 등록자ID, 제목)" aria-label="Search">
+							<a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
+							<a class="btn btn-sm btn-outline-primary ml-1"> <span>초기화</span></a>
 						</div>
 					</div>
 					<!--// 기간검색 -->
+					<div class="my-2">
+						<span class="text-primary mr-3"><i class="far fa-circle"></i> 녹화</span>
+						<span class="text-warning mr-3"><i class="far fa-circle"></i> 업로드</span>
+						<span class="text-danger"><i class="far fa-circle"></i> vimeo</span>
+					</div>
 					<table class="table">
 						<thead>
 							<tr class="bg-light">
-								<th scope="col" width="12%">사이트명</th>
+								<th scope="col" width="12%">기관명</th>
 								<th scope="col" width="12%">녹화실</th>
 								<th scope="col" width="12%">제목</th>
 								<th scope="col" width="12%">생성일</th>

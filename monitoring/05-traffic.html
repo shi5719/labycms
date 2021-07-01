@@ -83,7 +83,7 @@
 
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-						<h4 class="text-primary">시스템 로그</h4>
+						<h4 class="text-primary">콘텐츠 전송 트래픽</h4>
 						<div class="btn-toolbar mb-2 mb-md-0">
 							<div class="btn-group mr-2">
 								<a href="" type="button" class="btn btn-sm btn-outline-secondary">Share</a>
@@ -91,31 +91,37 @@
 							</div>
 						</div>
 					</div>
-					<!-- form group -->
+					<!-- 기간검색 -->
 					<div class="form-inline mb-4">
-                        <select class="form-control mr-sm-2 my-1" id="site" style="width:200px">
-                            <option selected>사이트 선택</option>
-                            <option value="1">a site</option>
-                            <option value="2">b site</option>
-                            <option value="3">c site</option>
-                        </select>
-                        <a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
+						<div class="form-group">
+							<select class="form-control form-control mr-sm-2 my-1" id="site">
+								<option selected>사이트 전체</option>
+								<option value="1">1주일</option>
+								<option value="2">3개월</option>
+								<option value="3">6개월</option>
+							</select>	
+							<select class="form-control form-control mr-sm-2 my-1" id="date">
+								<option selected>기간 전체</option>
+								<option value="1">1주일</option>
+								<option value="2">3개월</option>
+								<option value="3">6개월</option>
+							</select>
+							<div>
+								<input type="text" class="form-control" id="input-start" placeholder="시작일 선택" aria-describedby="day-start" style="width:120px">
+							</div>
+							<div>
+								<span class="px-1">~</span>
+								<input type="text" class="form-control" id="input-end" placeholder="종료일 선택" aria-describedby="day-end" style="width:120px">
+							</div>
+							<input class="form-control form-search ml-1" style="width:250px" type="search" placeholder="결과 내 검색(저작자, 등록자ID, 제목)" aria-label="Search">
+							<a class="btn btn-sm btn-primary ml-1"><i class="fas fa-search"></i> <span>조회</span></a>
+							<a class="btn btn-sm btn-outline-primary ml-1"> <span>초기화</span></a>
+						</div>
 					</div>
-					<!--// form group -->
-                    <h5 class="mb-3">시스템 에러 로그</h5>
+					<!--// 기간검색 -->
+                    <h5 class="mb-3">일일 현황</h5>
 					<div class="w-100 p-5" style="border:1px solid #eee">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem tellus, suscipit in turpis vitae, scelerisque eleifend lacus. 
-                        Aliquam condimentum ante lobortis mi bibendum, quis consectetur magna ultricies. Pellentesque at mauris in risus cursus tristique. Proin quis feugiat dolor. 
-                        Etiam condimentum luctus nibh, eget posuere orci. Curabitur leo enim, mollis eget aliquam ac, pretium quis ante. Ut et placerat sem. 
-                        Sed eu placerat lacus, nec mattis diam. Etiam et aliquam turpis, at aliquam risus. Morbi quis facilisis quam, et pharetra sapien. Nulla dictum, 
-                        dui commodo rutrum suscipit, orci nunc consectetur diam, pretium gravida mauris arcu sed diam. Etiam vel feugiat nisl, ultrices pretium mi. 
-                        Vestibulum ac pretium ligula. Etiam a finibus nibh, at lacinia mi.
-
-                        Aenean vehicula dui a lectus venenatis, quis congue magna tristique. Nulla sagittis tortor nec dui cursus, sed feugiat mi hendrerit. 
-                        Ut ac gravida enim. Suspendisse lobortis vestibulum ex in viverra. Nullam sed vulputate nisi. Sed consectetur ex vitae nisi fermentum volutpat. 
-                        Nam dignissim ornare vulputate. Donec sed sapien ut eros pellentesque pharetra eget eu magna. Phasellus eget massa nec mi tempor blandit nec id ex. 
-                        Sed eleifend sodales leo, a gravida ipsum finibus sed. Maecenas id tempus quam. Aliquam iaculis dolor ut viverra cursus. Duis erat tortor, 
-                        dictum eget justo a, ultricies volutpat nibh. Morbi libero quam, hendrerit sit amet ante sit amet, lacinia elementum turpis. Fusce a semper tellus.
+                        차트
                     </div>
 				</main>
 			</div><!--// row -->
